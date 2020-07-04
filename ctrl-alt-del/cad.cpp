@@ -27,7 +27,7 @@ gladeBuilder = gtk_builder_new();
 gtk_builder_add_from_file(gladeBuilder, "ctrl+alt+del.glade",NULL);
 lockBtn = GTK_WIDGET(gtk_builder_get_object(gladeBuilder, "lockBtn"));
 logoutBtn = GTK_WIDGET(gtk_builder_get_object(gladeBuilder, "logoutBtn"));
-sysMonitorBtn = GTK_WIDGET(gtk_builder_get_object(gladeBuilder, "lockBtn"));
+sysMonitorBtn = GTK_WIDGET(gtk_builder_get_object(gladeBuilder, "sysMonitorBtn"));
 window = GTK_WIDGET(gtk_builder_get_object(gladeBuilder, "window"));
 g_object_unref(G_OBJECT(gladeBuilder));
 gtk_widget_show(window);
